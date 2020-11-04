@@ -72,16 +72,19 @@ h3 {
 @media screen and (max-width: 768px) { 
     .full-width {
         width: 100%;
+        margin-bottom: 30px;
     }
     
     .half-width {
         width: 100%;
+        margin-bottom: 30px;
     }
 }
 
 @media screen and (min-width: 768px) { 
     .full-width {
         width: 100%;
+        margin-bottom: 30px;
     }
     
     .half-width {
@@ -114,4 +117,17 @@ a{
 .career ul,.skill ul {
     padding-left: 60px;
     list-style: square;
+}
+
+.work .link {
+    padding-left :20px;
+    font-size: 1rem;
+}
+.link:hover > .east {
+    animation: arrow 0.5s infinite;
+}
+
+@keyframes arrow {
+    from {transform: translateX(0);}
+    to {transform: translateX(10px);}
 }
