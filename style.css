@@ -69,12 +69,24 @@ h3 {
     margin:0 auto;
 }
 
-.full-width {
-    width: 100%;
+@media screen and (max-width: 768px) { 
+    .full-width {
+        width: 100%;
+    }
+    
+    .half-width {
+        width: 100%;
+    }
 }
 
-.half-width {
-    width: 50%;
+@media screen and (min-width: 768px) { 
+    .full-width {
+        width: 100%;
+    }
+    
+    .half-width {
+        width: 50%;
+    }
 }
 
 .picture {
@@ -86,6 +98,8 @@ h3 {
 .link {
     display: block;
 }
+
+
 
 /* list style  */
 
