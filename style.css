@@ -3,3 +3,97 @@
     margin:0;
     box-sizing: border-box;
 }
+/* material icon  */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  .icon {
+      vertical-align: middle;
+  }
+
+/* font */
+body {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+/* layout */
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.picture {
+    width: 100%;
+    height: 400px;
+    background-color: #777777;
+}
+
+.link {
+    display: block;
+}
+
+/* list style  */
+
+.work ul {
+    list-style: none;
+}
+
+.career ul,.skill ul {
+    padding-left: 60px;
+    list-style: square;
+}
