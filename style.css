@@ -1,0 +1,152 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'AppleSDGothicNeoM';
+}
+/* material icon  */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  .icon {
+      vertical-align: middle;
+  }
+
+/* font */
+@font-face {
+    font-family: 'AppleSDGothicNeoM';
+    src: url('./font/AppleSDGothicNeoM.eot');
+    src: url('./font/AppleSDGothicNeoM.eot?#iefix') format('embedded-opentype'),
+         url('./font/AppleSDGothicNeoM.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'AppleSDGothicNeoM00';
+    src: url('./font/AppleSDGothicNeoM00.ttf') format('truetype'),
+         url('./font/AppleSDGothicNeoM00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+body {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+/* layout */
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 320px;
+    max-width: 1440px;
+    margin:0 auto;
+    padding:20px;
+}
+
+@media screen and (max-width: 768px) { 
+    .full-width {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .half-width {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .full-width {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .half-width {
+        width: 50%;
+    }
+}
+
+.picture {
+    width: 100%;
+}
+.picture img {
+    width: 100%;
+}
+.link {
+    display: block;
+}
+
+a{
+    color:#000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* list style  */
+
+.work ul {
+    list-style: none;
+}
+
+.career ul,.skill ul {
+    padding-left: 60px;
+    list-style: square;
+}
+
+.work .link {
+    padding-left :20px;
+    font-size: 1rem;
+}
+.link:hover > .east {
+    animation: arrow 0.5s infinite;
+}
+
+@keyframes arrow {
+    from {transform: translateX(0);}
+    to {transform: translateX(10px);}
+}
